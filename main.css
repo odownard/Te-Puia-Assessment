@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
 
+/* First section styles header, nav and buttons for all pages. */
+
 header {
     background-color: rgb(192, 192, 192);
     height: 100px;
@@ -22,11 +24,11 @@ header img {
 
 nav {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     text-align: right;
-    margin-left: 72%;
+    margin-left: 48%;
     height: 100px;
-    width: 25%;
+    width: 50%;
 }
 
 button {
@@ -47,8 +49,46 @@ button:hover {
     color: rgb(255, 255, 255);
 }
 
+/* Next section styles hero sections on all pages */
+
 .hero-image {
     background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("./Te Puia Resources/20240626_111235.jpg");
+    height: 352px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 8px;
+}
+
+.hero-image2 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("./Te\ Puia\ Resources/20240626_111926.jpg");
+    height: 352px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 8px;
+}
+
+.hero-image3 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("./Te\ Puia\ Resources/20240626_101437.jpg");
+    height: 352px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 8px;
+}
+
+.hero-image4 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("./Te\ Puia\ Resources/20240626_101049.jpg");
+    height: 352px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 8px;
+}
+
+.hero-image5 {
+    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("./Te\ Puia\ Resources/20240626_112129.jpg");
     height: 352px;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,8 +113,10 @@ button:hover {
     font-family: Edu VIC WA NT Beginner;
     text-decoration: underline;
     background-color:rgb(238, 238, 238);
-    color: rgb(0, 0, 0);
+    color: rgb(155, 42, 42);
 }
+
+/* Next section is for page layout and organising including columns and text styling. */
 
 .two-column {
     display: grid;
@@ -84,6 +126,20 @@ button:hover {
     margin-top: 30px;
     margin: auto;
     gap: 45px;
+}
+
+.two-column-geyser-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    height: 600px;
+    margin-top: 30px;
+    margin: auto;
+    gap: 45px;
+    margin-bottom: 300px;
+}
+.two-column-geyser-bottom .image2 #tall{
+    height: 750px;
 }
 
 .image img {
@@ -97,15 +153,6 @@ button:hover {
    padding-top: 22%;
 }
 
-.hero-image2 {
-    background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("./Te\ Puia\ Resources/20240626_101049.jpg");
-    height: 352px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 8px;
-}
-
 .section-titles {
     width: 100%;
     font-size: 2.5rem;
@@ -113,6 +160,7 @@ button:hover {
     font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: underline;
     background-color: rgb(238, 238, 238);
+    color: rgb(155, 42, 42);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -133,27 +181,63 @@ button:hover {
     border-width: 5px;
 }
 
-#subsection {
-    border-width: 5px;
-    border-style: solid;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-}
-
 p {
     text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .info-text1 {
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .info-text2 {
-    font-size: 16px;
+    font-size: 26px;
 }
 
 .info-text {
-    font-size: 18px;
+    font-size: 22px;
+}
+
+/* Lastly, the final section styles the contact page and contact info/footer sections */
+
+#contact-info {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(155, 42, 42);
+    background-color: rgb(238, 238, 238);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#contact-info span {
+    text-decoration: underline;
+    color: blue;
+}
+
+#footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(155, 42, 42);
+    background-color: rgb(238, 238, 238);
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#footer p {
+    background-color: rgb(192, 192, 192);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#footer span {
+    text-decoration: underline;
+    color: blue;
+}
+
+#footer h3 {
+    color: black;
+    font-size: 20px;
 }
